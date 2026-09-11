@@ -1,7 +1,7 @@
 /**
  * SOFIA ZHUKOVA — 15TH BIRTHDAY
- * Premium Cinematic Microsite Controller
- * Bulletproof & Zero-Dependency
+ * Cinematic Digital Experience Controller
+ * Pure Vanilla JavaScript • Zero Dependencies • Cloudflare Ready
  */
 
 (function () {
@@ -12,119 +12,109 @@
      ========================================================================== */
   const translations = {
     ru: {
-      documentTitle: 'София Жукова — 15th Birthday',
+      documentTitle: 'Sofia Zhukova — 15th Birthday',
+      'opening.intro': 'Маленький подарок для тебя.',
+      'opening.button': 'Открыть сюрприз →',
       'hero.greeting': 'С Днём Рождения',
-      'hero.name': 'София',
       'hero.subtitle': '15 лет — это только начало.',
       'hero.scroll': 'Листай дальше ↓',
-      'message.tag': 'Праздничное послание',
-      'message.heading': 'Для Софии',
-      'message.paragraph1': 'Сегодня тебе исполняется 15.',
-      'message.paragraph2': 'Пусть этот новый год твоей жизни принесёт тебе много счастливых моментов, новых открытий, добрых людей и причин улыбаться.',
-      'story.tag': 'Фотоистория',
-      'story.title': 'История в кадрах',
-      'story.subtitle': 'Каждая фотография хранит тепло, улыбки и атмосферу этого времени.',
+      'message.heading': 'Для тебя',
+      'message.paragraph': 'Сегодня тебе исполняется 15. Пусть этот новый год твоей жизни принесёт тебе больше счастливых моментов, искренних улыбок, новых открытий и людей, рядом с которыми хочется улыбаться.',
       'gallery.view': 'Увеличить ↗',
-      'gallery.item1_title': 'Свет и вдохновение',
-      'gallery.item2_title': 'Искренняя улыбка',
-      'gallery.item3_title': 'Красота момента',
-      'gallery.item4_title': 'Радость каждого дня',
-      'gallery.item5_title': 'Неповторимый стиль',
+      'captions.moment1': 'Один из тех моментов.',
+      'captions.moment2': 'Просто хороший день.',
+      'captions.moment3': 'Такие моменты хочется сохранить.',
+      'captions.moment4': 'Некоторые воспоминания остаются тёплыми.',
+      'fullscreen.quote1': 'Некоторые моменты просто хочется сохранить.',
+      'fifteen_moments.title': '15 маленьких моментов',
+      'fifteen_moments.subtitle': '15 пожеланий и светлых деталей для твоего нового года',
+      'pills.1': 'Улыбки',
+      'pills.2': 'Новые мечты',
+      'pills.3': 'Маленькие радости',
+      'pills.4': 'Красивые дни',
+      'pills.5': 'Новые истории',
+      'pills.6': 'Тёплые воспоминания',
+      'pills.7': 'Искренность',
+      'pills.8': 'Вдохновение',
+      'pills.9': 'Светлые мысли',
+      'pills.10': 'Уютные вечера',
+      'pills.11': 'Добрые люди',
+      'pills.12': 'Смех и радость',
+      'pills.13': 'Новые открытия',
+      'pills.14': 'Счастливые случайности',
+      'pills.15': 'Твой особенный год',
+      'special.title': 'Некоторые люди делают моменты особенными.',
+      'special.text': 'И сегодня просто хочется пожелать тебе всего самого доброго — чтобы впереди было много дней, которые захочется запомнить.',
       'moments.title': 'Моменты',
-      'moments.subtitle': 'Некоторые моменты просто хочется сохранить.',
-      'moments.moment1': 'Теплые воспоминания',
-      'moments.moment1_note': 'Кадры, которые дарят уют и улыбку',
-      'moments.moment2': 'Яркие дни',
-      'moments.moment2_note': 'Энергия, юность и гармония',
-      'moments.moment3': 'Прекрасное будущее',
-      'moments.moment3_note': 'Впереди целый мир новых возможностей',
+      'moments.subtitle': 'Время проходит, а хорошие моменты остаются.',
       'fifteen.name': 'София Жукова',
       'fifteen.triplet': 'Новый год. Новые моменты. Новые мечты.',
-      'wish.text': 'Пусть твои 15 лет будут наполнены улыбками, добрыми людьми, маленькими радостями и моментами, которые однажды захочется вспомнить.',
-      'final.title': 'С Днём Рождения, София.',
-      'final.sparkle': '15 ✨',
+      'surprise.eyebrow': 'И ещё кое-что...',
+      'surprise.button': 'Открыть ✦',
+      'surprise.message': 'С 15-летием, София.<br>Пусть впереди будет много счастливых дней, искренних улыбок и моментов, которые однажды захочется вспомнить.',
+      'final.title': 'С Днём Рождения ✨',
+      'final.wishes': 'С добрыми пожеланиями.',
       'footer.wishes': 'С добрыми пожеланиями.',
       'lightbox.hint': 'Используйте стрелки ← → или свайп для навигации'
     },
     en: {
       documentTitle: 'Sofia Zhukova — 15th Birthday',
+      'opening.intro': 'A little something for you.',
+      'opening.button': 'Open the surprise →',
       'hero.greeting': 'Happy Birthday',
-      'hero.name': 'Sofia',
-      'hero.subtitle': '15 years is only the beginning.',
+      'hero.subtitle': '15 is only the beginning.',
       'hero.scroll': 'Scroll to discover ↓',
-      'message.tag': 'Birthday Message',
-      'message.heading': 'For Sofia',
-      'message.paragraph1': 'Today you turn 15.',
-      'message.paragraph2': 'May this new year of your life bring you many happy moments, new discoveries, kind people, and countless reasons to smile.',
-      'story.tag': 'Photo Story',
-      'story.title': 'Story in Frames',
-      'story.subtitle': 'Every photograph preserves warmth, smiles, and the atmosphere of this time.',
+      'message.heading': 'For You',
+      'message.paragraph': 'Today you turn 15. May this new year of your life bring you more happy moments, genuine smiles, new discoveries, and people who make you want to smile.',
       'gallery.view': 'Expand ↗',
-      'gallery.item1_title': 'Light & Inspiration',
-      'gallery.item2_title': 'A Genuine Smile',
-      'gallery.item3_title': 'Beauty of the Moment',
-      'gallery.item4_title': 'Joy of Every Day',
-      'gallery.item5_title': 'Unique Style',
+      'captions.moment1': 'One of those moments.',
+      'captions.moment2': 'Just a good day.',
+      'captions.moment3': 'Moments worth keeping.',
+      'captions.moment4': 'Some memories stay warm.',
+      'fullscreen.quote1': 'Some moments are simply worth keeping.',
+      'fifteen_moments.title': '15 Little Moments',
+      'fifteen_moments.subtitle': '15 warm wishes and bright details for your new year',
+      'pills.1': 'Smiles',
+      'pills.2': 'New dreams',
+      'pills.3': 'Little joys',
+      'pills.4': 'Beautiful days',
+      'pills.5': 'New stories',
+      'pills.6': 'Warm memories',
+      'pills.7': 'Sincerity',
+      'pills.8': 'Inspiration',
+      'pills.9': 'Bright thoughts',
+      'pills.10': 'Cozy evenings',
+      'pills.11': 'Kind people',
+      'pills.12': 'Laughter & joy',
+      'pills.13': 'New discoveries',
+      'pills.14': 'Happy coincidences',
+      'pills.15': 'Your special year',
+      'special.title': 'Some people make moments feel special.',
+      'special.text': 'And today, I simply want to wish you the very best — may there be many days ahead that you’ll want to remember.',
       'moments.title': 'Moments',
-      'moments.subtitle': 'Some moments are simply worth keeping.',
-      'moments.moment1': 'Warm Memories',
-      'moments.moment1_note': 'Frames that bring comfort and a smile',
-      'moments.moment2': 'Bright Days',
-      'moments.moment2_note': 'Energy, youth, and harmony',
-      'moments.moment3': 'A Beautiful Future',
-      'moments.moment3_note': 'A whole world of new possibilities ahead',
+      'moments.subtitle': 'Time passes, but the good moments remain.',
       'fifteen.name': 'Sofia Zhukova',
       'fifteen.triplet': 'A new year. New moments. New dreams.',
-      'wish.text': 'May your 15th year be filled with smiles, kind people, little joys, and moments you’ll one day be happy to remember.',
-      'final.title': 'Happy Birthday, Sofia.',
-      'final.sparkle': '15 ✨',
-      'footer.wishes': 'Made with good wishes.',
+      'surprise.eyebrow': "There's one more thing...",
+      'surprise.button': 'Open ✦',
+      'surprise.message': 'Happy 15th Birthday, Sofia.<br>May there be many happy days ahead, genuine smiles, and moments you’ll one day want to remember.',
+      'final.title': 'Happy Birthday ✨',
+      'final.wishes': 'With warm wishes.',
+      'footer.wishes': 'With warm wishes.',
       'lightbox.hint': 'Use arrow keys ← → or swipe to navigate'
     }
   };
 
   /* Photo collection for Lightbox */
   const photosData = [
-    {
-      src: 'images/image7.jpg',
-      captionRu: 'Свет и вдохновение · София',
-      captionEn: 'Light & Inspiration · Sofia'
-    },
-    {
-      src: 'images/image1.jpg',
-      captionRu: 'Искренняя улыбка · София',
-      captionEn: 'A Genuine Smile · Sofia'
-    },
-    {
-      src: 'images/image5.jpg',
-      captionRu: 'Красота момента · София',
-      captionEn: 'Beauty of the Moment · Sofia'
-    },
-    {
-      src: 'images/image2.jpg',
-      captionRu: 'Радость каждого дня · София',
-      captionEn: 'Joy of Every Day · Sofia'
-    },
-    {
-      src: 'images/image8.jpg',
-      captionRu: 'Неповторимый стиль · София',
-      captionEn: 'Unique Style · Sofia'
-    },
-    {
-      src: 'images/image3.jpg',
-      captionRu: 'Теплые воспоминания · София',
-      captionEn: 'Warm Memories · Sofia'
-    },
-    {
-      src: 'images/image4.jpg',
-      captionRu: 'Яркие дни · София',
-      captionEn: 'Bright Days · Sofia'
-    },
-    {
-      src: 'images/image6.jpg',
-      captionRu: 'Прекрасное будущее · София',
-      captionEn: 'A Beautiful Future · Sofia'
-    }
+    { src: 'images/image7.jpg', alt: 'Sofia Zhukova' },
+    { src: 'images/image1.jpg', alt: 'Sofia Zhukova' },
+    { src: 'images/image5.jpg', alt: 'Sofia Zhukova' },
+    { src: 'images/image2.jpg', alt: 'Sofia Zhukova' },
+    { src: 'images/image8.jpg', alt: 'Sofia Zhukova' },
+    { src: 'images/image3.jpg', alt: 'Sofia Zhukova' },
+    { src: 'images/image4.jpg', alt: 'Sofia Zhukova' },
+    { src: 'images/image6.jpg', alt: 'Sofia Zhukova' }
   ];
 
   /* ==========================================================================
@@ -144,23 +134,30 @@
     try {
       localStorage.setItem(STORAGE_KEY, lang);
     } catch (e) {
-      // Ignore if storage is blocked
+      // Safe fallback if local storage is restricted
     }
   }
 
   /* ==========================================================================
-     3. INITIALIZATION ON DOM READY
+     3. MAIN CONTROLLER
      ========================================================================== */
   function initApp() {
-    // --- DOM Elements ---
+    // --- Elements ---
     const btnRu = document.getElementById('btn-lang-ru');
     const btnEn = document.getElementById('btn-lang-en');
     const header = document.getElementById('header');
+    const openingScreen = document.getElementById('opening-screen');
+    const openingBtn = document.getElementById('opening-btn');
     
-    // Lightbox DOM Elements
+    // Surprise Reveal Elements
+    const surpriseBtn = document.getElementById('surprise-btn');
+    const surpriseInitial = document.getElementById('surprise-initial');
+    const surpriseRevealed = document.getElementById('surprise-revealed');
+    const surpriseCard = document.getElementById('surprise-card');
+
+    // Lightbox Elements
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxCaption = document.getElementById('lightbox-caption');
     const lightboxCurrent = document.getElementById('lightbox-current');
     const lightboxTotal = document.getElementById('lightbox-total');
     const lightboxCloseBtn = document.getElementById('lightbox-close');
@@ -178,6 +175,35 @@
       lightboxTotal.textContent = photosData.length.toString();
     }
 
+    // --- Opening Screen Handler ---
+    if (openingBtn && openingScreen) {
+      openingBtn.addEventListener('click', () => {
+        openingScreen.classList.add('is-opened');
+        setTimeout(() => {
+          openingScreen.style.display = 'none';
+        }, 850);
+      });
+    }
+
+    // --- Surprise Reveal Handler ---
+    if (surpriseBtn && surpriseInitial && surpriseRevealed) {
+      surpriseBtn.addEventListener('click', () => {
+        surpriseInitial.style.opacity = '0';
+        surpriseInitial.style.transform = 'scale(0.95)';
+        
+        setTimeout(() => {
+          surpriseInitial.style.display = 'none';
+          surpriseRevealed.style.display = 'block';
+          if (surpriseCard) surpriseCard.classList.add('is-revealed-state');
+          
+          requestAnimationFrame(() => {
+            surpriseRevealed.style.opacity = '1';
+            surpriseRevealed.style.transform = 'scale(1)';
+          });
+        }, 300);
+      });
+    }
+
     // --- Lightbox Functions ---
     function updateLightboxContent() {
       const photo = photosData[currentPhotoIndex];
@@ -185,20 +211,16 @@
 
       if (lightboxImg) {
         lightboxImg.style.opacity = '0';
-        lightboxImg.style.transform = 'scale(0.96)';
+        lightboxImg.style.transform = 'scale(0.97)';
         
         const tempImg = new Image();
         tempImg.onload = () => {
           lightboxImg.src = photo.src;
-          lightboxImg.alt = currentLang === 'ru' ? photo.captionRu : photo.captionEn;
+          lightboxImg.alt = photo.alt;
           lightboxImg.style.opacity = '1';
           lightboxImg.style.transform = 'scale(1)';
         };
         tempImg.src = photo.src;
-      }
-
-      if (lightboxCaption) {
-        lightboxCaption.textContent = currentLang === 'ru' ? photo.captionRu : photo.captionEn;
       }
 
       if (lightboxCurrent) {
@@ -250,28 +272,28 @@
       setStoredLang(lang);
       document.documentElement.setAttribute('lang', lang);
 
-      // Update button active state
+      // Buttons active state
       if (btnRu) btnRu.classList.toggle('active', lang === 'ru');
       if (btnEn) btnEn.classList.toggle('active', lang === 'en');
 
-      // Update page title
+      // Title
       if (translations[lang].documentTitle) {
         document.title = translations[lang].documentTitle;
       }
 
-      // Update all elements with data-i18n attribute
+      // Update all translatable elements
       const translatableElements = document.querySelectorAll('[data-i18n]');
       translatableElements.forEach((el) => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-          el.textContent = translations[lang][key];
+          const content = translations[lang][key];
+          if (content.includes('<br>')) {
+            el.innerHTML = content;
+          } else {
+            el.textContent = content;
+          }
         }
       });
-
-      // Update active lightbox if open
-      if (lightbox && lightbox.classList.contains('active')) {
-        updateLightboxContent();
-      }
     }
 
     if (btnRu) btnRu.addEventListener('click', () => setLanguage('ru'));
@@ -310,11 +332,10 @@
 
       revealElements.forEach((el) => revealObserver.observe(el));
     } else {
-      // Fallback: reveal immediately
       revealElements.forEach((el) => el.classList.add('is-revealed'));
     }
 
-    // Safety fallback: reveal all after 1.2s in case observer didn't trigger
+    // Safety fallback
     setTimeout(() => {
       revealElements.forEach((el) => el.classList.add('is-revealed'));
     }, 1200);
@@ -388,37 +409,40 @@
       }, { passive: true });
     }
 
-    // --- Subtle 3D Card Tilt for Desktop ---
-    const tiltCards = document.querySelectorAll('.photo-card, .moment-exhibit-card');
+    // --- Custom Cursor on Desktop ---
+    const cursorDot = document.getElementById('cursor-dot');
+    const cursorRing = document.getElementById('cursor-ring');
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-    if (!isTouchDevice && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
-      tiltCards.forEach((card) => {
-        card.addEventListener('mousemove', (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-          
-          const centerX = rect.width / 2;
-          const centerY = rect.height / 2;
-          
-          const deltaX = (x - centerX) / centerX;
-          const deltaY = (y - centerY) / centerY;
-          
-          const rotateX = (-deltaY * 3.5).toFixed(2);
-          const rotateY = (deltaX * 3.5).toFixed(2);
-          
-          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
-        });
+    if (!isTouchDevice && cursorDot && cursorRing && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+      let mouseX = -100;
+      let mouseY = -100;
+      let ringX = -100;
+      let ringY = -100;
 
-        card.addEventListener('mouseleave', () => {
-          card.style.transform = '';
-        });
+      window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+      });
+
+      function renderCursor() {
+        ringX += (mouseX - ringX) * 0.15;
+        ringY += (mouseY - ringY) * 0.15;
+        cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
+        requestAnimationFrame(renderCursor);
+      }
+      renderCursor();
+
+      const interactiveTargets = document.querySelectorAll('a, button, [role="button"], .photo-card, .moment-pill-card');
+      interactiveTargets.forEach((target) => {
+        target.addEventListener('mouseenter', () => cursorRing.classList.add('hovered'));
+        target.addEventListener('mouseleave', () => cursorRing.classList.remove('hovered'));
       });
     }
   }
 
-  // Run on DOM ready
+  // DOM ready hook
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initApp);
   } else {

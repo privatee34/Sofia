@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>София Жукова — 15th Birthday</title>
-  <meta name="description" content="A digital birthday celebration for Sofia Zhukova — 15 Years">
-  <meta name="theme-color" content="#F7F4EE">
+  <title>Sofia Zhukova — 15th Birthday</title>
+  <meta name="description" content="A cinematic digital birthday celebration for Sofia Zhukova — 15 Years">
+  <meta name="theme-color" content="#110F0E">
 
   <!-- Open Graph / Meta -->
-  <meta property="og:title" content="София Жукова — 15th Birthday">
+  <meta property="og:title" content="Sofia Zhukova — 15th Birthday">
   <meta property="og:description" content="15 лет — это только начало.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/image6.jpg">
@@ -16,26 +16,53 @@
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
 
-  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) with Cyrillic support -->
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans with full Cyrillic support -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Ambient background lighting -->
+  <!-- Custom Desktop Cursor Follower -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Ambient Organic Glow Lighting -->
   <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
   <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
 
-  <!-- Header / Navigation & Language Switcher -->
+  <!-- ==========================================
+       1. CINEMATIC OPENING EXPERIENCE
+  =========================================== -->
+  <div class="opening-screen" id="opening-screen" role="dialog" aria-modal="true" aria-label="Surprise Opening">
+    <div class="opening-backdrop" aria-hidden="true"></div>
+    <div class="opening-container">
+      <p class="opening-intro" data-i18n="opening.intro">Маленький подарок для тебя.</p>
+      
+      <div class="opening-title-group">
+        <h1 class="opening-name">SOFIA</h1>
+        <div class="opening-badge">
+          <span class="opening-number">15</span>
+        </div>
+      </div>
+
+      <button type="button" class="opening-btn" id="opening-btn">
+        <span class="opening-btn-text" data-i18n="opening.button">Открыть сюрприз →</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & LANGUAGE SWITCHER
+  =========================================== -->
   <header class="site-header" id="header">
     <div class="header-container">
-      <div class="brand-monogram" aria-label="Sofia Zhukova monogram">
+      <a href="#hero" class="brand-monogram" aria-label="Sofia Zhukova monogram">
         <span class="monogram-letter">S</span>
         <span class="monogram-separator">·</span>
         <span class="monogram-number">15</span>
-      </div>
+      </a>
 
       <nav class="header-nav" aria-label="Language navigation">
         <div class="lang-switch-wrapper">
@@ -55,7 +82,7 @@
 
   <main id="main-content">
     <!-- ==========================================
-         HERO SECTION
+         2. HERO SECTION
     =========================================== -->
     <section class="hero-section" id="hero" aria-label="Hero">
       <div class="hero-media-wrapper">
@@ -71,15 +98,15 @@
 
       <div class="hero-content">
         <div class="hero-text-block">
-          <p class="hero-eyebrow animate-fade-in" data-i18n="hero.greeting">С Днём Рождения</p>
-          <h1 class="hero-title animate-fade-in delay-1" data-i18n="hero.name">София</h1>
-          <div class="hero-badge-wrapper animate-fade-in delay-2">
+          <h1 class="hero-main-name animate-fade-in">SOFIA</h1>
+          <div class="hero-badge-wrapper animate-fade-in delay-1">
             <span class="hero-age-number">15</span>
           </div>
+          <p class="hero-greeting animate-fade-in delay-2" data-i18n="hero.greeting">С Днём Рождения</p>
           <p class="hero-subtitle animate-fade-in delay-3" data-i18n="hero.subtitle">15 лет — это только начало.</p>
         </div>
 
-        <a href="#message" class="hero-scroll-indicator animate-fade-in delay-4" aria-label="Scroll to first message">
+        <a href="#message" class="hero-scroll-indicator animate-fade-in delay-4" aria-label="Scroll to birthday message">
           <span class="scroll-text" data-i18n="hero.scroll">Листай дальше ↓</span>
           <div class="scroll-mouse-icon" aria-hidden="true">
             <div class="scroll-wheel"></div>
@@ -89,20 +116,16 @@
     </section>
 
     <!-- ==========================================
-         SECTION 2: THE FIRST MESSAGE
+         3. PERSONAL MESSAGE ("Для тебя" / "For You")
     =========================================== -->
-    <section class="section message-section" id="message" aria-label="Birthday Message">
+    <section class="section message-section" id="message" aria-label="Personal Message">
       <div class="container container-narrow">
         <div class="message-card reveal-on-scroll">
           <div class="message-accent-line" aria-hidden="true"></div>
-          <span class="section-tag" data-i18n="message.tag">Праздничное послание</span>
-          <h2 class="message-heading" data-i18n="message.heading">Для Софии</h2>
+          <h2 class="message-heading" data-i18n="message.heading">Для тебя</h2>
           <div class="message-body">
-            <p class="message-p lead" data-i18n="message.paragraph1">
-              Сегодня тебе исполняется 15.
-            </p>
-            <p class="message-p" data-i18n="message.paragraph2">
-              Пусть этот новый год твоей жизни принесёт тебе много счастливых моментов, новых открытий, добрых людей и причин улыбаться.
+            <p class="message-quote-p" data-i18n="message.paragraph">
+              Сегодня тебе исполняется 15. Пусть этот новый год твоей жизни принесёт тебе больше счастливых моментов, искренних улыбок, новых открытий и людей, рядом с которыми хочется улыбаться.
             </p>
           </div>
           <div class="message-footer-deco" aria-hidden="true">
@@ -115,95 +138,73 @@
     </section>
 
     <!-- ==========================================
-         SECTION 3: PHOTO STORY (Cinematic Editorial Gallery)
+         4. CINEMATIC PHOTO STORY
     =========================================== -->
     <section class="section story-section" id="story" aria-label="Photo Story">
       <div class="container">
-        <div class="section-header reveal-on-scroll text-center">
-          <span class="section-tag" data-i18n="story.tag">Фотоистория</span>
-          <h2 class="section-title" data-i18n="story.title">История в кадрах</h2>
-          <p class="section-desc" data-i18n="story.subtitle">Каждая фотография хранит тепло, улыбки и атмосферу этого времени.</p>
-        </div>
-
-        <!-- Editorial Asymmetrical Photo Grid -->
         <div class="editorial-grid">
           <!-- Item 1: Large portrait -->
           <div class="editorial-item item-large-portrait reveal-on-scroll">
-            <div class="photo-card" data-photo-index="0" role="button" tabindex="0" aria-label="Открыть фото 1">
+            <div class="photo-card" data-photo-index="0" role="button" tabindex="0" aria-label="View photo 1">
               <div class="photo-img-wrapper">
-                <img src="images/image7.jpg" alt="Sofia portrait 1" class="photo-img" loading="lazy">
+                <img src="images/image7.jpg" alt="Sofia portrait" class="photo-img" loading="lazy">
                 <div class="photo-card-overlay">
                   <span class="view-pill" data-i18n="gallery.view">Увеличить ↗</span>
                 </div>
               </div>
-              <div class="photo-card-info">
-                <span class="photo-card-num">01</span>
-                <span class="photo-card-title" data-i18n="gallery.item1_title">Свет и вдохновение</span>
-              </div>
+              <p class="editorial-caption" data-i18n="captions.moment1">Один из тех моментов.</p>
             </div>
           </div>
 
-          <!-- Item 2: Square / Small Portrait -->
+          <!-- Item 2: Square Portrait -->
           <div class="editorial-item item-small-portrait reveal-on-scroll delay-1">
-            <div class="photo-card" data-photo-index="1" role="button" tabindex="0" aria-label="Открыть фото 2">
+            <div class="photo-card" data-photo-index="1" role="button" tabindex="0" aria-label="View photo 2">
               <div class="photo-img-wrapper square-ratio">
-                <img src="images/image1.jpg" alt="Sofia portrait 2" class="photo-img" loading="lazy">
+                <img src="images/image1.jpg" alt="Sofia portrait" class="photo-img" loading="lazy">
                 <div class="photo-card-overlay">
                   <span class="view-pill" data-i18n="gallery.view">Увеличить ↗</span>
                 </div>
               </div>
-              <div class="photo-card-info">
-                <span class="photo-card-num">02</span>
-                <span class="photo-card-title" data-i18n="gallery.item2_title">Искренняя улыбка</span>
-              </div>
+              <p class="editorial-caption" data-i18n="captions.moment2">Просто хороший день.</p>
             </div>
           </div>
 
           <!-- Item 3: Wide Image (Landscape) -->
           <div class="editorial-item item-wide reveal-on-scroll">
-            <div class="photo-card" data-photo-index="2" role="button" tabindex="0" aria-label="Открыть фото 3">
+            <div class="photo-card" data-photo-index="2" role="button" tabindex="0" aria-label="View photo 3">
               <div class="photo-img-wrapper landscape-ratio">
-                <img src="images/image5.jpg" alt="Sofia portrait 3" class="photo-img" loading="lazy">
+                <img src="images/image5.jpg" alt="Sofia wide moment" class="photo-img" loading="lazy">
                 <div class="photo-card-overlay">
                   <span class="view-pill" data-i18n="gallery.view">Увеличить ↗</span>
                 </div>
               </div>
-              <div class="photo-card-info">
-                <span class="photo-card-num">03</span>
-                <span class="photo-card-title" data-i18n="gallery.item3_title">Красота момента</span>
-              </div>
+              <p class="editorial-caption text-center" data-i18n="captions.moment3">Такие моменты хочется сохранить.</p>
             </div>
           </div>
 
-          <!-- Item 4: Overlapping / Offset Image -->
+          <!-- Item 4: Offset Image -->
           <div class="editorial-item item-offset reveal-on-scroll delay-1">
-            <div class="photo-card" data-photo-index="3" role="button" tabindex="0" aria-label="Открыть фото 4">
+            <div class="photo-card" data-photo-index="3" role="button" tabindex="0" aria-label="View photo 4">
               <div class="photo-img-wrapper square-ratio">
-                <img src="images/image2.jpg" alt="Sofia portrait 4" class="photo-img" loading="lazy">
+                <img src="images/image2.jpg" alt="Sofia portrait" class="photo-img" loading="lazy">
                 <div class="photo-card-overlay">
                   <span class="view-pill" data-i18n="gallery.view">Увеличить ↗</span>
                 </div>
               </div>
-              <div class="photo-card-info">
-                <span class="photo-card-num">04</span>
-                <span class="photo-card-title" data-i18n="gallery.item4_title">Радость каждого дня</span>
-              </div>
+              <p class="editorial-caption" data-i18n="captions.moment4">Некоторые воспоминания остаются тёплыми.</p>
             </div>
           </div>
 
-          <!-- Item 5: Portrait with subtle overlap -->
+          <!-- Item 5: Tall Portrait -->
           <div class="editorial-item item-tall reveal-on-scroll">
-            <div class="photo-card" data-photo-index="4" role="button" tabindex="0" aria-label="Открыть фото 5">
+            <div class="photo-card" data-photo-index="4" role="button" tabindex="0" aria-label="View photo 5">
               <div class="photo-img-wrapper">
-                <img src="images/image8.jpg" alt="Sofia portrait 5" class="photo-img" loading="lazy">
+                <img src="images/image8.jpg" alt="Sofia portrait" class="photo-img" loading="lazy">
                 <div class="photo-card-overlay">
                   <span class="view-pill" data-i18n="gallery.view">Увеличить ↗</span>
                 </div>
               </div>
-              <div class="photo-card-info">
-                <span class="photo-card-num">05</span>
-                <span class="photo-card-title" data-i18n="gallery.item5_title">Неповторимый стиль</span>
-              </div>
+              <p class="editorial-caption" data-i18n="captions.moment1">Один из тех моментов.</p>
             </div>
           </div>
         </div>
@@ -211,7 +212,110 @@
     </section>
 
     <!-- ==========================================
-         SECTION 4: "MOMENTS" (Digital Exhibition)
+         5. FULLSCREEN PHOTO MOMENTS
+    =========================================== -->
+    <section class="fullscreen-photo-section reveal-on-scroll" aria-label="Visual Interlude">
+      <div class="fullscreen-photo-media">
+        <img src="images/image6.jpg" alt="Sofia cinematic photo" class="fullscreen-photo-img" loading="lazy">
+        <div class="fullscreen-photo-overlay"></div>
+      </div>
+      <div class="fullscreen-photo-content text-center">
+        <p class="fullscreen-quote" data-i18n="fullscreen.quote1">Некоторые моменты просто хочется сохранить.</p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. "15 LITTLE MOMENTS" (Editorial Cards)
+    =========================================== -->
+    <section class="section fifteen-moments-section" id="little-moments" aria-label="15 Little Moments">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <h2 class="section-title" data-i18n="fifteen_moments.title">15 маленьких моментов</h2>
+          <p class="section-desc" data-i18n="fifteen_moments.subtitle">15 пожеланий и светлых деталей для твоего нового года</p>
+        </div>
+
+        <div class="moments-pills-grid">
+          <div class="moment-pill-card reveal-on-scroll">
+            <span class="pill-number">01</span>
+            <span class="pill-text" data-i18n="pills.1">Улыбки</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll delay-1">
+            <span class="pill-number">02</span>
+            <span class="pill-text" data-i18n="pills.2">Новые мечты</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll delay-2">
+            <span class="pill-number">03</span>
+            <span class="pill-text" data-i18n="pills.3">Маленькие радости</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll">
+            <span class="pill-number">04</span>
+            <span class="pill-text" data-i18n="pills.4">Красивые дни</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll delay-1">
+            <span class="pill-number">05</span>
+            <span class="pill-text" data-i18n="pills.5">Новые истории</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll delay-2">
+            <span class="pill-number">06</span>
+            <span class="pill-text" data-i18n="pills.6">Тёплые воспоминания</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll">
+            <span class="pill-number">07</span>
+            <span class="pill-text" data-i18n="pills.7">Искренность</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll delay-1">
+            <span class="pill-number">08</span>
+            <span class="pill-text" data-i18n="pills.8">Вдохновение</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll delay-2">
+            <span class="pill-number">09</span>
+            <span class="pill-text" data-i18n="pills.9">Светлые мысли</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll">
+            <span class="pill-number">10</span>
+            <span class="pill-text" data-i18n="pills.10">Уютные вечера</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll delay-1">
+            <span class="pill-number">11</span>
+            <span class="pill-text" data-i18n="pills.11">Добрые люди</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll delay-2">
+            <span class="pill-number">12</span>
+            <span class="pill-text" data-i18n="pills.12">Смех и радость</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll">
+            <span class="pill-number">13</span>
+            <span class="pill-text" data-i18n="pills.13">Новые открытия</span>
+          </div>
+          <div class="moment-pill-card reveal-on-scroll delay-1">
+            <span class="pill-number">14</span>
+            <span class="pill-text" data-i18n="pills.14">Счастливые случайности</span>
+          </div>
+          <div class="moment-pill-card pill-card-featured reveal-on-scroll delay-2">
+            <span class="pill-number">15</span>
+            <span class="pill-text" data-i18n="pills.15">Твой особенный год</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. SUBTLE ROMANTIC / EMOTIONAL SECTION
+    =========================================== -->
+    <section class="section emotional-section" id="special-people" aria-label="A Special Thought">
+      <div class="container container-narrow text-center">
+        <div class="emotional-card reveal-on-scroll">
+          <span class="emotional-star">✦</span>
+          <h2 class="emotional-title" data-i18n="special.title">Некоторые люди делают моменты особенными.</h2>
+          <p class="emotional-text" data-i18n="special.text">
+            И сегодня просто хочется пожелать тебе всего самого доброго — чтобы впереди было много дней, которые захочется запомнить.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         8. MEMORY / DIARY MOMENTS
     =========================================== -->
     <section class="section moments-section" id="moments" aria-label="Moments Gallery">
       <div class="container">
@@ -221,7 +325,7 @@
           </div>
           <div class="moments-header-right">
             <p class="moments-statement" data-i18n="moments.subtitle">
-              Некоторые моменты просто хочется сохранить.
+              Время проходит, а хорошие моменты остаются.
             </p>
           </div>
         </div>
@@ -229,56 +333,48 @@
         <div class="moments-gallery">
           <!-- Moment Card A -->
           <div class="moment-exhibit-card reveal-on-scroll">
-            <div class="moment-media" data-photo-index="5" role="button" tabindex="0" aria-label="Открыть фото 6">
-              <img src="images/image3.jpg" alt="Sofia special moment 1" class="moment-img" loading="lazy">
+            <div class="moment-media" data-photo-index="5" role="button" tabindex="0" aria-label="View photo 6">
+              <img src="images/image3.jpg" alt="Sofia moment" class="moment-img" loading="lazy">
               <div class="moment-hover-indicator">
                 <span class="moment-plus">+</span>
               </div>
             </div>
-            <div class="moment-caption">
-              <span class="moment-index">06</span>
-              <h3 class="moment-name" data-i18n="moments.moment1">Теплые воспоминания</h3>
-              <p class="moment-note" data-i18n="moments.moment1_note">Кадры, которые дарят уют и улыбку</p>
-            </div>
+            <p class="moment-caption-text" data-i18n="captions.moment1">Один из тех моментов.</p>
           </div>
 
           <!-- Moment Card B -->
           <div class="moment-exhibit-card reveal-on-scroll delay-1">
-            <div class="moment-media" data-photo-index="6" role="button" tabindex="0" aria-label="Открыть фото 7">
-              <img src="images/image4.jpg" alt="Sofia special moment 2" class="moment-img" loading="lazy">
+            <div class="moment-media" data-photo-index="6" role="button" tabindex="0" aria-label="View photo 7">
+              <img src="images/image4.jpg" alt="Sofia moment" class="moment-img" loading="lazy">
               <div class="moment-hover-indicator">
                 <span class="moment-plus">+</span>
               </div>
             </div>
-            <div class="moment-caption">
-              <span class="moment-index">07</span>
-              <h3 class="moment-name" data-i18n="moments.moment2">Яркие дни</h3>
-              <p class="moment-note" data-i18n="moments.moment2_note">Энергия, юность и гармония</p>
-            </div>
+            <p class="moment-caption-text" data-i18n="captions.moment2">Просто хороший день.</p>
           </div>
 
           <!-- Moment Card C -->
           <div class="moment-exhibit-card reveal-on-scroll delay-2">
-            <div class="moment-media" data-photo-index="7" role="button" tabindex="0" aria-label="Открыть фото 8">
-              <img src="images/image6.jpg" alt="Sofia special moment 3" class="moment-img" loading="lazy">
+            <div class="moment-media" data-photo-index="7" role="button" tabindex="0" aria-label="View photo 8">
+              <img src="images/image6.jpg" alt="Sofia moment" class="moment-img" loading="lazy">
               <div class="moment-hover-indicator">
                 <span class="moment-plus">+</span>
               </div>
             </div>
-            <div class="moment-caption">
-              <span class="moment-index">08</span>
-              <h3 class="moment-name" data-i18n="moments.moment3">Прекрасное будущее</h3>
-              <p class="moment-note" data-i18n="moments.moment3_note">Впереди целый мир новых возможностей</p>
-            </div>
+            <p class="moment-caption-text" data-i18n="captions.moment4">Некоторые воспоминания остаются тёплыми.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================
-         SECTION 5: THE NUMBER 15
+         9. BIG "15" SECTION
     =========================================== -->
     <section class="section number-fifteen-section" id="fifteen" aria-label="15th Birthday Milestone">
+      <div class="fifteen-bg-blur" aria-hidden="true">
+        <img src="images/image5.jpg" alt="" class="fifteen-bg-img" loading="lazy">
+      </div>
+      
       <div class="container text-center">
         <div class="fifteen-container reveal-on-scroll">
           <div class="fifteen-number-wrapper">
@@ -298,29 +394,35 @@
     </section>
 
     <!-- ==========================================
-         SECTION 6: BIRTHDAY WISH
+         10. INTERACTIVE SURPRISE REVEAL
     =========================================== -->
-    <section class="section wish-section" id="wish" aria-label="Birthday Wish Quote">
-      <div class="container container-narrow">
-        <div class="wish-card reveal-on-scroll">
-          <div class="wish-quote-mark" aria-hidden="true">“</div>
-          <blockquote class="wish-quote-text" data-i18n="wish.text">
-            Пусть твои 15 лет будут наполнены улыбками, добрыми людьми, маленькими радостями и моментами, которые однажды захочется вспомнить.
-          </blockquote>
-          <div class="wish-author-badge">
-            <span class="wish-author-name">Sofia Zhukova</span>
-            <span class="wish-author-dot">·</span>
-            <span class="wish-author-age">15th Birthday</span>
+    <section class="section surprise-section" id="surprise" aria-label="Surprise Message">
+      <div class="container container-narrow text-center">
+        <div class="surprise-card reveal-on-scroll" id="surprise-card">
+          <div class="surprise-initial-state" id="surprise-initial">
+            <p class="surprise-eyebrow" data-i18n="surprise.eyebrow">И ещё кое-что...</p>
+            <button type="button" class="surprise-btn" id="surprise-btn" aria-label="Open surprise message">
+              <span class="surprise-btn-text" data-i18n="surprise.button">Открыть ✦</span>
+            </button>
+          </div>
+
+          <div class="surprise-revealed-state" id="surprise-revealed" style="display: none;">
+            <div class="surprise-sparkle-icon" aria-hidden="true">✨</div>
+            <p class="surprise-revealed-text" data-i18n="surprise.message">
+              С 15-летием, София.<br>
+              Пусть впереди будет много счастливых дней, искренних улыбок и моментов, которые однажды захочется вспомнить.
+            </p>
+            <div class="surprise-revealed-subnote" data-i18n="final.wishes">С добрыми пожеланиями.</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================
-         SECTION 7: FINAL PHOTO & GREETING
+         11. FINAL CINEMATIC SECTION
     =========================================== -->
-    <section class="section final-photo-section" id="final-photo" aria-label="Final Celebration Photo">
-      <div class="final-photo-container reveal-on-scroll">
+    <section class="final-photo-section" id="final-photo" aria-label="Final Celebration Photo">
+      <div class="final-photo-container">
         <div class="final-media-wrapper">
           <img 
             src="images/image7.jpg" 
@@ -331,9 +433,11 @@
           <div class="final-overlay"></div>
         </div>
 
-        <div class="final-content">
-          <h2 class="final-title" data-i18n="final.title">С Днём Рождения, София.</h2>
-          <p class="final-sparkle-age" data-i18n="final.sparkle">15 ✨</p>
+        <div class="final-content text-center">
+          <h2 class="final-main-name">SOFIA</h2>
+          <div class="final-age-badge">15</div>
+          <p class="final-birthday-text" data-i18n="final.title">С Днём Рождения ✨</p>
+          <p class="final-warm-wishes" data-i18n="final.wishes">С добрыми пожеланиями.</p>
         </div>
       </div>
     </section>
@@ -348,7 +452,6 @@
         <p class="footer-name">Sofia Zhukova</p>
         <p class="footer-age-badge">15</p>
         <p class="footer-wish-line" data-i18n="footer.wishes">С добрыми пожеланиями.</p>
-        <div class="footer-year">2026</div>
       </div>
     </div>
   </footer>
@@ -383,7 +486,6 @@
 
         <div class="lightbox-image-container">
           <img src="" alt="" id="lightbox-img" class="lightbox-image">
-          <div class="lightbox-caption-bar" id="lightbox-caption"></div>
         </div>
 
         <button type="button" class="lightbox-btn lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photo (Right arrow)">
