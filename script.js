@@ -1,6 +1,6 @@
 /**
  * SOFIA ZHUKOVA — 15TH BIRTHDAY
- * Cinematic Digital Experience Controller
+ * Cinematic Digital Birthday Gift & Personal Letter
  * Pure Vanilla JavaScript • Zero Dependencies • Cloudflare Ready
  */
 
@@ -12,95 +12,93 @@
      ========================================================================== */
   const translations = {
     ru: {
-      documentTitle: 'Sofia Zhukova — 15th Birthday',
+      documentTitle: 'Sofia Zhukova — A Gift For You',
       'opening.intro': 'Маленький подарок для тебя.',
       'opening.button': 'Открыть сюрприз →',
       'hero.greeting': 'С Днём Рождения',
-      'hero.subtitle': '15 лет — это только начало.',
+      'hero.name': 'София',
       'hero.scroll': 'Листай дальше ↓',
-      'message.heading': 'Для тебя',
-      'message.paragraph': 'Сегодня тебе исполняется 15. Пусть этот новый год твоей жизни принесёт тебе больше счастливых моментов, искренних улыбок, новых открытий и людей, рядом с которыми хочется улыбаться.',
+      'for_you.heading': 'Для тебя',
+      'for_you.paragraph1': 'Сегодня твой день.<br>И мне просто хотелось сделать для тебя что-то немного особенное.',
+      'for_you.paragraph2': 'Пусть этот новый год твоей жизни принесёт тебе много улыбок, добрых людей, красивых моментов и причин радоваться каждому новому дню.',
       'gallery.view': 'Увеличить ↗',
       'captions.moment1': 'Один из тех моментов.',
       'captions.moment2': 'Просто хороший день.',
       'captions.moment3': 'Такие моменты хочется сохранить.',
-      'captions.moment4': 'Некоторые воспоминания остаются тёплыми.',
-      'fullscreen.quote1': 'Некоторые моменты просто хочется сохранить.',
-      'fifteen_moments.title': '15 маленьких моментов',
-      'fifteen_moments.subtitle': '15 пожеланий и светлых деталей для твоего нового года',
-      'pills.1': 'Улыбки',
-      'pills.2': 'Новые мечты',
-      'pills.3': 'Маленькие радости',
-      'pills.4': 'Красивые дни',
-      'pills.5': 'Новые истории',
-      'pills.6': 'Тёплые воспоминания',
-      'pills.7': 'Искренность',
-      'pills.8': 'Вдохновение',
-      'pills.9': 'Светлые мысли',
-      'pills.10': 'Уютные вечера',
-      'pills.11': 'Добрые люди',
-      'pills.12': 'Смех и радость',
-      'pills.13': 'Новые открытия',
-      'pills.14': 'Счастливые случайности',
-      'pills.15': 'Твой особенный год',
-      'special.title': 'Некоторые люди делают моменты особенными.',
-      'special.text': 'И сегодня просто хочется пожелать тебе всего самого доброго — чтобы впереди было много дней, которые захочется запомнить.',
+      'letter.for_sofia': 'Для Софии',
+      'letter.heading': 'Письмо от меня',
+      'letter.teaser': 'Несколько искренних слов, написанных специально для тебя.',
+      'letter.open_btn': 'Открыть письмо',
+      'letter.date': 'Для Софии · В твой день',
+      'letter.salutation': 'Привет, София.',
+      'letter.p1': 'Спасибо тебе за то, что когда-то была частью моей жизни, даже несмотря на то, что нам так и не удалось встретиться вживую.',
+      'letter.p2': 'Как ты там? Всё ли у тебя хорошо? Ты хорошо кушаешь? :)<br>А как твои занятия плаванием? Наверное, ты часто занимаешь призовые места, да?',
+      'letter.p3': 'Я хотел сказать тебе ещё кое-что.',
+      'letter.p4': 'Прости меня за то, что иногда я был эгоистичным и постоянно хотел первым поставить точку и попрощаться. Я сам не знаю, что тогда со мной происходило.',
+      'letter.p5': 'Если честно, какая-то часть меня всё ещё хотела бы иногда общаться с тобой. Не знаю, случится ли это когда-нибудь снова, но мне просто хотелось сказать тебе об этом.',
+      'letter.p6': 'Спасибо, что открыла это маленькое письмо.',
+      'letter.closing': 'С теплом,',
+      'letter.author': 'Архан',
+      'quiet_pause.quote': 'Некоторые вещи просто хочется сказать однажды.',
       'moments.title': 'Моменты',
-      'moments.subtitle': 'Время проходит, а хорошие моменты остаются.',
+      'moments.caption1': 'Тёплые воспоминания.',
+      'moments.caption2': 'Хорошие дни.',
+      'moments.caption3': 'Моменты, которые хочется сохранить.',
       'fifteen.name': 'София Жукова',
-      'fifteen.triplet': 'Новый год. Новые моменты. Новые мечты.',
+      'fifteen.triplet': 'Новый год.<br>Новые моменты.<br>Новые мечты.',
       'surprise.eyebrow': 'И ещё кое-что...',
       'surprise.button': 'Открыть ✦',
-      'surprise.message': 'С 15-летием, София.<br>Пусть впереди будет много счастливых дней, искренних улыбок и моментов, которые однажды захочется вспомнить.',
+      'surprise.title': 'С 15-летием, София. ✨',
+      'surprise.message': 'Пусть впереди будет много дней,<br>которые захочется запомнить.',
+      'surprise.final_wish': 'Для тебя — с теплом.',
       'final.title': 'С Днём Рождения ✨',
-      'final.wishes': 'С добрыми пожеланиями.',
-      'footer.wishes': 'С добрыми пожеланиями.',
+      'final.signature': 'С теплом,<br>Архан',
+      'footer.wishes': 'С теплом, Архан',
       'lightbox.hint': 'Используйте стрелки ← → или свайп для навигации'
     },
     en: {
-      documentTitle: 'Sofia Zhukova — 15th Birthday',
-      'opening.intro': 'A little something for you.',
+      documentTitle: 'Sofia Zhukova — A Gift For You',
+      'opening.intro': 'A little gift for you.',
       'opening.button': 'Open the surprise →',
       'hero.greeting': 'Happy Birthday',
-      'hero.subtitle': '15 is only the beginning.',
-      'hero.scroll': 'Scroll to discover ↓',
-      'message.heading': 'For You',
-      'message.paragraph': 'Today you turn 15. May this new year of your life bring you more happy moments, genuine smiles, new discoveries, and people who make you want to smile.',
+      'hero.name': 'Sofia',
+      'hero.scroll': 'Scroll down ↓',
+      'for_you.heading': 'For You',
+      'for_you.paragraph1': 'Today is your day.<br>And I simply wanted to make something a little special for you.',
+      'for_you.paragraph2': 'May this new year of your life bring you many smiles, wonderful people, beautiful moments, and reasons to smile every single day.',
       'gallery.view': 'Expand ↗',
       'captions.moment1': 'One of those moments.',
       'captions.moment2': 'Just a good day.',
-      'captions.moment3': 'Moments worth keeping.',
-      'captions.moment4': 'Some memories stay warm.',
-      'fullscreen.quote1': 'Some moments are simply worth keeping.',
-      'fifteen_moments.title': '15 Little Moments',
-      'fifteen_moments.subtitle': '15 warm wishes and bright details for your new year',
-      'pills.1': 'Smiles',
-      'pills.2': 'New dreams',
-      'pills.3': 'Little joys',
-      'pills.4': 'Beautiful days',
-      'pills.5': 'New stories',
-      'pills.6': 'Warm memories',
-      'pills.7': 'Sincerity',
-      'pills.8': 'Inspiration',
-      'pills.9': 'Bright thoughts',
-      'pills.10': 'Cozy evenings',
-      'pills.11': 'Kind people',
-      'pills.12': 'Laughter & joy',
-      'pills.13': 'New discoveries',
-      'pills.14': 'Happy coincidences',
-      'pills.15': 'Your special year',
-      'special.title': 'Some people make moments feel special.',
-      'special.text': 'And today, I simply want to wish you the very best — may there be many days ahead that you’ll want to remember.',
+      'captions.moment3': 'Some moments are worth keeping.',
+      'letter.for_sofia': 'For Sofia',
+      'letter.heading': 'A Letter From Me',
+      'letter.teaser': 'A few heartfelt words written just for you.',
+      'letter.open_btn': 'Open the letter',
+      'letter.date': 'For Sofia · On your special day',
+      'letter.salutation': 'Hi Sofia.',
+      'letter.p1': 'Thank you for having been a part of my life, even though we never had the chance to meet in person.',
+      'letter.p2': 'How have you been? Is everything going well with you? Are you eating well? :)<br>And how is your swimming going? You probably win medals all the time, don\'t you?',
+      'letter.p3': 'There is something else I wanted to tell you.',
+      'letter.p4': 'I\'m sorry for the times I was selfish and always wanted to be the one to end the conversation and say goodbye. Looking back, I honestly don\'t know what was going on with me.',
+      'letter.p5': 'To be completely honest, a part of me still wishes we could talk from time to time. I don\'t know if that will ever happen again, but I simply wanted to let you know.',
+      'letter.p6': 'Thank you for opening this little letter.',
+      'letter.closing': 'Warmly,',
+      'letter.author': 'Arkhan',
+      'quiet_pause.quote': 'Some things are simply worth saying once.',
       'moments.title': 'Moments',
-      'moments.subtitle': 'Time passes, but the good moments remain.',
+      'moments.caption1': 'Warm memories.',
+      'moments.caption2': 'Good days.',
+      'moments.caption3': 'Moments worth keeping.',
       'fifteen.name': 'Sofia Zhukova',
-      'fifteen.triplet': 'A new year. New moments. New dreams.',
-      'surprise.eyebrow': "There's one more thing...",
+      'fifteen.triplet': 'A new year.<br>New moments.<br>New dreams.',
+      'surprise.eyebrow': 'And one more thing...',
       'surprise.button': 'Open ✦',
-      'surprise.message': 'Happy 15th Birthday, Sofia.<br>May there be many happy days ahead, genuine smiles, and moments you’ll one day want to remember.',
+      'surprise.title': 'Happy 15th Birthday, Sofia. ✨',
+      'surprise.message': 'May there be many days ahead<br>that you will cherish and remember.',
+      'surprise.final_wish': 'For you — with warmth.',
       'final.title': 'Happy Birthday ✨',
-      'final.wishes': 'With warm wishes.',
-      'footer.wishes': 'With warm wishes.',
+      'final.signature': 'With warmth,<br>Arkhan',
+      'footer.wishes': 'With warmth, Arkhan',
       'lightbox.hint': 'Use arrow keys ← → or swipe to navigate'
     }
   };
@@ -148,7 +146,13 @@
     const header = document.getElementById('header');
     const openingScreen = document.getElementById('opening-screen');
     const openingBtn = document.getElementById('opening-btn');
-    
+
+    // Letter Elements
+    const letterClosed = document.getElementById('letter-closed');
+    const letterOpenBtn = document.getElementById('letter-open-btn');
+    const letterUnfolded = document.getElementById('letter-unfolded');
+    const letterWrapper = document.getElementById('letter-wrapper');
+
     // Surprise Reveal Elements
     const surpriseBtn = document.getElementById('surprise-btn');
     const surpriseInitial = document.getElementById('surprise-initial');
@@ -175,7 +179,7 @@
       lightboxTotal.textContent = photosData.length.toString();
     }
 
-    // --- Opening Screen Handler ---
+    // --- Opening Screen Smooth Transition ---
     if (openingBtn && openingScreen) {
       openingBtn.addEventListener('click', () => {
         openingScreen.classList.add('is-opened');
@@ -185,17 +189,40 @@
       });
     }
 
-    // --- Surprise Reveal Handler ---
+    // --- Interactive Letter Unfolding Handler ---
+    if (letterOpenBtn && letterClosed && letterUnfolded) {
+      letterOpenBtn.addEventListener('click', () => {
+        letterClosed.style.opacity = '0';
+        letterClosed.style.transform = 'scale(0.96) translateY(-10px)';
+
+        setTimeout(() => {
+          letterClosed.style.display = 'none';
+          letterUnfolded.style.display = 'block';
+          letterUnfolded.style.opacity = '0';
+          letterUnfolded.style.transform = 'translateY(24px) scale(0.98)';
+
+          if (letterWrapper) letterWrapper.classList.add('is-unfolded-state');
+
+          requestAnimationFrame(() => {
+            letterUnfolded.style.transition = 'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)';
+            letterUnfolded.style.opacity = '1';
+            letterUnfolded.style.transform = 'translateY(0) scale(1)';
+          });
+        }, 300);
+      });
+    }
+
+    // --- Climax Surprise Reveal Handler ---
     if (surpriseBtn && surpriseInitial && surpriseRevealed) {
       surpriseBtn.addEventListener('click', () => {
         surpriseInitial.style.opacity = '0';
         surpriseInitial.style.transform = 'scale(0.95)';
-        
+
         setTimeout(() => {
           surpriseInitial.style.display = 'none';
           surpriseRevealed.style.display = 'block';
           if (surpriseCard) surpriseCard.classList.add('is-revealed-state');
-          
+
           requestAnimationFrame(() => {
             surpriseRevealed.style.opacity = '1';
             surpriseRevealed.style.transform = 'scale(1)';
@@ -212,7 +239,7 @@
       if (lightboxImg) {
         lightboxImg.style.opacity = '0';
         lightboxImg.style.transform = 'scale(0.97)';
-        
+
         const tempImg = new Image();
         tempImg.onload = () => {
           lightboxImg.src = photo.src;
@@ -232,7 +259,7 @@
       if (!lightbox) return;
       currentPhotoIndex = (index >= 0 && index < photosData.length) ? index : 0;
       lastFocusedElement = document.activeElement;
-      
+
       updateLightboxContent();
 
       lightbox.classList.add('active');
@@ -276,7 +303,7 @@
       if (btnRu) btnRu.classList.toggle('active', lang === 'ru');
       if (btnEn) btnEn.classList.toggle('active', lang === 'en');
 
-      // Title
+      // Page Title
       if (translations[lang].documentTitle) {
         document.title = translations[lang].documentTitle;
       }
@@ -299,7 +326,7 @@
     if (btnRu) btnRu.addEventListener('click', () => setLanguage('ru'));
     if (btnEn) btnEn.addEventListener('click', () => setLanguage('en'));
 
-    // Apply language right away
+    // Apply language on startup
     setLanguage(currentLang);
 
     // --- Header Scroll State ---
@@ -344,7 +371,7 @@
     const photoTriggers = document.querySelectorAll('[data-photo-index]');
     photoTriggers.forEach((trigger) => {
       const index = parseInt(trigger.getAttribute('data-photo-index'), 10);
-      
+
       trigger.addEventListener('click', (e) => {
         e.preventDefault();
         openLightbox(index);
@@ -392,7 +419,7 @@
       lightbox.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].screenX;
         touchEndY = e.changedTouches[0].screenY;
-        
+
         const diffX = touchEndX - touchStartX;
         const diffY = touchEndY - touchStartY;
         const threshold = 40;
@@ -434,7 +461,7 @@
       }
       renderCursor();
 
-      const interactiveTargets = document.querySelectorAll('a, button, [role="button"], .photo-card, .moment-pill-card');
+      const interactiveTargets = document.querySelectorAll('a, button, [role="button"], .photo-card, .moment-media');
       interactiveTargets.forEach((target) => {
         target.addEventListener('mouseenter', () => cursorRing.classList.add('hovered'));
         target.addEventListener('mouseleave', () => cursorRing.classList.remove('hovered'));
@@ -449,3 +476,4 @@
     initApp();
   }
 })();
+
