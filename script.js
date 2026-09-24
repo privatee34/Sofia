@@ -15,6 +15,7 @@
       documentTitle: 'Sofia Zhukova — A Gift For You',
       'opening.intro': 'Маленький подарок для тебя.',
       'opening.button': 'Открыть сюрприз →',
+      'hero.for_you': 'ДЛЯ ТЕБЯ',
       'hero.greeting': 'С Днём Рождения',
       'hero.name': 'София',
       'hero.scroll': 'Листай дальше ↓',
@@ -24,7 +25,8 @@
       'gallery.view': 'Увеличить ↗',
       'captions.moment1': 'Один из тех моментов.',
       'captions.moment2': 'Просто хороший день.',
-      'captions.moment3': 'Такие моменты хочется сохранить.',
+      'captions.moment3': 'Некоторые моменты остаются.',
+      'heartbeat.sign': 'Просто маленький знак.',
       'letter.for_sofia': 'Для Софии',
       'letter.heading': 'Письмо от меня',
       'letter.teaser': 'Несколько искренних слов, написанных специально для тебя.',
@@ -39,6 +41,8 @@
       'letter.p6': 'Спасибо, что открыла это маленькое письмо.',
       'letter.closing': 'С теплом,',
       'letter.author': 'Архан',
+      'memory.heading': 'ЕСЛИ БЫ ЭТО БЫЛО ВОСПОМИНАНИЕМ...',
+      'memory.quote': 'Думаю, это воспоминание я бы сохранил.',
       'quiet_pause.quote': 'Некоторые вещи просто хочется сказать однажды.',
       'moments.title': 'Моменты',
       'moments.caption1': 'Тёплые воспоминания.',
@@ -46,20 +50,41 @@
       'moments.caption3': 'Моменты, которые хочется сохранить.',
       'fifteen.name': 'София Жукова',
       'fifteen.triplet': 'Новый год.<br>Новые моменты.<br>Новые мечты.',
+      'note.tag': 'МАЛЕНЬКАЯ ЗАПИСКА',
+      'note.open_btn': 'Открыть',
+      'note.content': 'Без громких слов.<br><br>Просто... я рад, что когда-то ты была частью моей истории.',
       'surprise.eyebrow': 'И ещё кое-что...',
       'surprise.button': 'Открыть ✦',
       'surprise.title': 'С 15-летием, София. ✨',
       'surprise.message': 'Пусть впереди будет много дней,<br>которые захочется запомнить.',
       'surprise.final_wish': 'Для тебя — с теплом.',
+      'stay.tag': 'Для моментов, которые остаются',
+      'stay.main_p1': 'Некоторые люди тихо становятся частью нашей истории.',
+      'stay.main_p2': 'Не потому, что остаются навсегда,<br>а потому, что однажды<br>делают что-то немного более значимым.',
+      'stay.secondary': 'Может быть, этого достаточно.',
+      'stay.button': 'Ещё кое-что ✦',
+      'stay.overlay_p1': 'Пусть жизнь подарит тебе много маленьких поводов для улыбки.',
+      'stay.overlay_p2': 'И когда-нибудь, оглядываясь назад,<br>пусть некоторые моменты вспоминаются тебе с теплом.',
+      'stay.hidden_note': 'Некоторые вещи лучше оставить красивым воспоминанием.',
+      'space.title': 'Маленькое место для тебя',
+      'space.subtitle': 'Просто маленькое место, где можно что-то оставить.',
+      'space.open_btn': 'Оставить что-нибудь ✦',
+      'space.panel_intro': 'Может быть, мысль.<br>Может быть, несколько слов.<br>А может, ничего.',
+      'space.placeholder': 'Напиши что-нибудь...',
+      'space.submit_btn': 'Оставить здесь ✦',
+      'space.submitted': 'Оставлено здесь. ✦',
+      'space.secret_found': 'Ты нашла тихую часть. ✦',
       'final.title': 'С Днём Рождения ✨',
-      'final.signature': 'С теплом,<br>Архан',
-      'footer.wishes': 'С теплом, Архан',
+      'final.wish': 'Пусть твои 15 будут наполнены красивыми моментами, искренними улыбками и маленькими радостями, которые делают тебя счастливой.',
+      'final.closing_whisper': 'Некоторые моменты стоит сохранить.',
+      'footer.wishes': '15-летие',
       'lightbox.hint': 'Используйте стрелки ← → или свайп для навигации'
     },
     en: {
       documentTitle: 'Sofia Zhukova — A Gift For You',
       'opening.intro': 'A little gift for you.',
       'opening.button': 'Open the surprise →',
+      'hero.for_you': 'FOR YOU',
       'hero.greeting': 'Happy Birthday',
       'hero.name': 'Sofia',
       'hero.scroll': 'Scroll down ↓',
@@ -69,7 +94,8 @@
       'gallery.view': 'Expand ↗',
       'captions.moment1': 'One of those moments.',
       'captions.moment2': 'Just a good day.',
-      'captions.moment3': 'Some moments are worth keeping.',
+      'captions.moment3': 'Some moments stay.',
+      'heartbeat.sign': 'Just a little sign.',
       'letter.for_sofia': 'For Sofia',
       'letter.heading': 'A Letter From Me',
       'letter.teaser': 'A few heartfelt words written just for you.',
@@ -84,6 +110,8 @@
       'letter.p6': 'Thank you for opening this little letter.',
       'letter.closing': 'Warmly,',
       'letter.author': 'Arkhan',
+      'memory.heading': 'IF THIS WERE A MEMORY...',
+      'memory.quote': 'I think I\'d keep this one.',
       'quiet_pause.quote': 'Some things are simply worth saying once.',
       'moments.title': 'Moments',
       'moments.caption1': 'Warm memories.',
@@ -91,14 +119,34 @@
       'moments.caption3': 'Moments worth keeping.',
       'fifteen.name': 'Sofia Zhukova',
       'fifteen.triplet': 'A new year.<br>New moments.<br>New dreams.',
+      'note.tag': 'A LITTLE NOTE',
+      'note.open_btn': 'Open',
+      'note.content': 'No big words.<br><br>Just... I\'m glad you were once part of my story.',
       'surprise.eyebrow': 'And one more thing...',
       'surprise.button': 'Open ✦',
       'surprise.title': 'Happy 15th Birthday, Sofia. ✨',
       'surprise.message': 'May there be many days ahead<br>that you will cherish and remember.',
       'surprise.final_wish': 'For you — with warmth.',
+      'stay.tag': 'For the moments that stay',
+      'stay.main_p1': 'Some people become part of our story quietly.',
+      'stay.main_p2': 'Not because they stayed forever,<br>but because, for a moment,<br>they made something feel a little more meaningful.',
+      'stay.secondary': 'Maybe that\'s enough.',
+      'stay.button': 'One more thing ✦',
+      'stay.overlay_p1': 'I hope life gives you many little reasons to smile.',
+      'stay.overlay_p2': 'And when you look back someday,<br>I hope you\'ll remember some moments kindly.',
+      'stay.hidden_note': 'Some things are better left as a beautiful memory.',
+      'space.title': 'A Little Space For You',
+      'space.subtitle': 'Just a small place to leave something behind.',
+      'space.open_btn': 'Leave something here ✦',
+      'space.panel_intro': 'Maybe a thought.<br>Maybe a few words.<br>Maybe nothing at all.',
+      'space.placeholder': 'Write something...',
+      'space.submit_btn': 'Leave it here ✦',
+      'space.submitted': 'Left here. ✦',
+      'space.secret_found': 'You found the quiet part. ✦',
       'final.title': 'Happy Birthday ✨',
-      'final.signature': 'With warmth,<br>Arkhan',
-      'footer.wishes': 'With warmth, Arkhan',
+      'final.wish': 'May your 15th be filled with beautiful moments, genuine smiles, and little things that make you happy.',
+      'final.closing_whisper': 'Some moments are worth keeping.',
+      'footer.wishes': '15th Birthday',
       'lightbox.hint': 'Use arrow keys ← → or swipe to navigate'
     }
   };
@@ -146,7 +194,7 @@
     const header = document.getElementById('header');
     const openingScreen = document.getElementById('opening-screen');
     const openingBtn = document.getElementById('opening-btn');
-
+    
     // Letter Elements
     const letterClosed = document.getElementById('letter-closed');
     const letterOpenBtn = document.getElementById('letter-open-btn');
@@ -158,6 +206,39 @@
     const surpriseInitial = document.getElementById('surprise-initial');
     const surpriseRevealed = document.getElementById('surprise-revealed');
     const surpriseCard = document.getElementById('surprise-card');
+
+    // "For The Moments That Stay" Elements
+    const stayTriggerBtn = document.getElementById('stay-trigger-btn');
+    const stayOverlayCard = document.getElementById('stay-overlay-card');
+    const stayOverlayClose = document.getElementById('stay-overlay-close');
+
+    // "A Little Space For You" Elements
+    const spaceOpenBtn = document.getElementById('space-open-btn');
+    const spaceTriggerWrapper = document.getElementById('space-trigger-wrapper');
+    const spacePanel = document.getElementById('space-panel');
+    const spaceTextarea = document.getElementById('space-textarea');
+    const spaceForm = document.getElementById('space-form');
+    const spaceSubmitBtn = document.getElementById('space-submit-btn');
+    const spaceSubmittedState = document.getElementById('space-submitted-state');
+    const spaceSecretTrigger = document.getElementById('space-secret-trigger');
+    const spaceSecretToast = document.getElementById('space-secret-toast');
+
+    // Heartbeat Elements
+    const heartbeatWidget = document.getElementById('heartbeat-widget');
+    const heartbeatIcon = document.getElementById('heartbeat-icon');
+    const heartbeatTooltip = document.getElementById('heartbeat-tooltip');
+    let heartbeatTimer = null;
+
+    // Note Card Elements
+    const noteOpenBtn = document.getElementById('note-open-btn');
+    const noteModal = document.getElementById('note-modal');
+    const noteCloseBtn = document.getElementById('note-close-btn');
+    const noteBackdrop = document.getElementById('note-backdrop');
+
+    // Final Section Elements
+    const finalSection = document.getElementById('final-photo');
+    const finalWhisper = document.getElementById('final-whisper');
+    const finalFadeToDark = document.getElementById('final-fade-to-dark');
 
     // Lightbox Elements
     const lightbox = document.getElementById('lightbox');
@@ -194,15 +275,15 @@
       letterOpenBtn.addEventListener('click', () => {
         letterClosed.style.opacity = '0';
         letterClosed.style.transform = 'scale(0.96) translateY(-10px)';
-
+        
         setTimeout(() => {
           letterClosed.style.display = 'none';
           letterUnfolded.style.display = 'block';
           letterUnfolded.style.opacity = '0';
           letterUnfolded.style.transform = 'translateY(24px) scale(0.98)';
-
+          
           if (letterWrapper) letterWrapper.classList.add('is-unfolded-state');
-
+          
           requestAnimationFrame(() => {
             letterUnfolded.style.transition = 'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)';
             letterUnfolded.style.opacity = '1';
@@ -217,18 +298,229 @@
       surpriseBtn.addEventListener('click', () => {
         surpriseInitial.style.opacity = '0';
         surpriseInitial.style.transform = 'scale(0.95)';
-
+        
         setTimeout(() => {
           surpriseInitial.style.display = 'none';
           surpriseRevealed.style.display = 'block';
           if (surpriseCard) surpriseCard.classList.add('is-revealed-state');
-
+          
           requestAnimationFrame(() => {
             surpriseRevealed.style.opacity = '1';
             surpriseRevealed.style.transform = 'scale(1)';
           });
         }, 300);
       });
+    }
+
+    // --- "For The Moments That Stay" Overlay Handlers ---
+    if (stayTriggerBtn && stayOverlayCard) {
+      function openStayOverlay() {
+        stayOverlayCard.style.display = 'block';
+        stayOverlayCard.style.opacity = '0';
+        stayOverlayCard.style.transform = 'translateY(16px) scale(0.98)';
+        stayTriggerBtn.setAttribute('aria-expanded', 'true');
+
+        requestAnimationFrame(() => {
+          stayOverlayCard.style.transition = 'opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1)';
+          stayOverlayCard.style.opacity = '1';
+          stayOverlayCard.style.transform = 'translateY(0) scale(1)';
+          if (stayOverlayClose) stayOverlayClose.focus();
+        });
+      }
+
+      function closeStayOverlay() {
+        stayOverlayCard.style.opacity = '0';
+        stayOverlayCard.style.transform = 'translateY(12px) scale(0.98)';
+        stayTriggerBtn.setAttribute('aria-expanded', 'false');
+
+        setTimeout(() => {
+          stayOverlayCard.style.display = 'none';
+          stayTriggerBtn.focus();
+        }, 400);
+      }
+
+      stayTriggerBtn.addEventListener('click', () => {
+        if (stayOverlayCard.style.display === 'none' || stayOverlayCard.style.display === '') {
+          openStayOverlay();
+        } else {
+          closeStayOverlay();
+        }
+      });
+
+      if (stayOverlayClose) {
+        stayOverlayClose.addEventListener('click', closeStayOverlay);
+      }
+    }
+
+    // --- A Little Space For You Interactions ---
+    if (spaceOpenBtn && spaceTriggerWrapper && spacePanel) {
+      spaceOpenBtn.addEventListener('click', () => {
+        spaceTriggerWrapper.style.opacity = '0';
+        spaceTriggerWrapper.style.transform = 'scale(0.96)';
+        
+        setTimeout(() => {
+          spaceTriggerWrapper.style.display = 'none';
+          spacePanel.style.display = 'block';
+          spacePanel.style.opacity = '0';
+          spacePanel.style.transform = 'translateY(16px)';
+          
+          requestAnimationFrame(() => {
+            spacePanel.style.transition = 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+            spacePanel.style.opacity = '1';
+            spacePanel.style.transform = 'translateY(0)';
+            if (spaceTextarea) spaceTextarea.focus();
+          });
+        }, 250);
+      });
+    }
+
+    if (spaceSubmitBtn && spaceForm && spaceSubmittedState) {
+      spaceSubmitBtn.addEventListener('click', () => {
+        const introP = document.querySelector('.space-panel-intro');
+        if (introP) {
+          introP.style.opacity = '0';
+          introP.style.transform = 'translateY(-8px)';
+        }
+        spaceForm.style.opacity = '0';
+        spaceForm.style.transform = 'translateY(-8px)';
+
+        setTimeout(() => {
+          if (introP) introP.style.display = 'none';
+          spaceForm.style.display = 'none';
+          spaceSubmittedState.style.display = 'block';
+          spaceSubmittedState.style.opacity = '0';
+          spaceSubmittedState.style.transform = 'scale(0.95)';
+
+          requestAnimationFrame(() => {
+            spaceSubmittedState.style.transition = 'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)';
+            spaceSubmittedState.style.opacity = '1';
+            spaceSubmittedState.style.transform = 'scale(1)';
+          });
+        }, 300);
+      });
+    }
+
+    // --- Secret Quiet Detail (Click ✦ 3 times) ---
+    if (spaceSecretTrigger && spaceSecretToast) {
+      let secretClicks = 0;
+      let secretTimer = null;
+      let toastHideTimer = null;
+
+      function handleSecretTrigger() {
+        secretClicks++;
+        clearTimeout(secretTimer);
+        secretTimer = setTimeout(() => {
+          secretClicks = 0;
+        }, 4000);
+
+        if (secretClicks >= 3) {
+          secretClicks = 0;
+          clearTimeout(toastHideTimer);
+
+          spaceSecretToast.style.display = 'block';
+          spaceSecretToast.style.opacity = '0';
+          spaceSecretToast.style.transform = 'translateY(8px)';
+
+          requestAnimationFrame(() => {
+            spaceSecretToast.style.transition = 'opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
+            spaceSecretToast.style.opacity = '1';
+            spaceSecretToast.style.transform = 'translateY(0)';
+          });
+
+          toastHideTimer = setTimeout(() => {
+            spaceSecretToast.style.opacity = '0';
+            spaceSecretToast.style.transform = 'translateY(-8px)';
+            setTimeout(() => {
+              spaceSecretToast.style.display = 'none';
+            }, 500);
+          }, 3500);
+        }
+      }
+
+      spaceSecretTrigger.addEventListener('click', handleSecretTrigger);
+      spaceSecretTrigger.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleSecretTrigger();
+        }
+      });
+    }
+
+    // --- Heartbeat Sign Interaction ---
+    if (heartbeatWidget) {
+      function triggerHeartbeatSign() {
+        if (heartbeatIcon) heartbeatIcon.textContent = '♥';
+        heartbeatWidget.classList.add('active');
+        if (heartbeatTooltip) heartbeatTooltip.classList.add('is-visible');
+
+        clearTimeout(heartbeatTimer);
+        heartbeatTimer = setTimeout(() => {
+          if (heartbeatTooltip) heartbeatTooltip.classList.remove('is-visible');
+          if (heartbeatIcon) heartbeatIcon.textContent = '♡';
+          heartbeatWidget.classList.remove('active');
+        }, 3500);
+      }
+
+      heartbeatWidget.addEventListener('click', triggerHeartbeatSign);
+      heartbeatWidget.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          triggerHeartbeatSign();
+        }
+      });
+    }
+
+    // --- "A Little Note" Modal Interactions ---
+    if (noteOpenBtn && noteModal) {
+      function openNoteModal() {
+        noteModal.classList.add('active');
+        noteModal.setAttribute('aria-hidden', 'false');
+        noteOpenBtn.setAttribute('aria-expanded', 'true');
+        lastFocusedElement = document.activeElement;
+        document.body.style.overflow = 'hidden';
+        if (noteCloseBtn) noteCloseBtn.focus();
+      }
+
+      function closeNoteModal() {
+        noteModal.classList.remove('active');
+        noteModal.setAttribute('aria-hidden', 'true');
+        noteOpenBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+          lastFocusedElement.focus();
+        } else {
+          noteOpenBtn.focus();
+        }
+      }
+
+      noteOpenBtn.addEventListener('click', openNoteModal);
+      if (noteCloseBtn) noteCloseBtn.addEventListener('click', closeNoteModal);
+      if (noteBackdrop) noteBackdrop.addEventListener('click', closeNoteModal);
+    }
+
+    // --- Final Section Delayed Whisper & Fade to Dark Observer ---
+    if (finalSection && (finalWhisper || finalFadeToDark)) {
+      if ('IntersectionObserver' in window) {
+        const finalObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              observer.unobserve(entry.target);
+              setTimeout(() => {
+                if (finalWhisper) finalWhisper.classList.add('is-visible');
+              }, 2000);
+              setTimeout(() => {
+                if (finalFadeToDark) finalFadeToDark.classList.add('is-dimmed');
+              }, 3800);
+            }
+          });
+        }, {
+          threshold: 0.35
+        });
+        finalObserver.observe(finalSection);
+      } else {
+        if (finalWhisper) finalWhisper.classList.add('is-visible');
+        if (finalFadeToDark) finalFadeToDark.classList.add('is-dimmed');
+      }
     }
 
     // --- Lightbox Functions ---
@@ -239,7 +531,7 @@
       if (lightboxImg) {
         lightboxImg.style.opacity = '0';
         lightboxImg.style.transform = 'scale(0.97)';
-
+        
         const tempImg = new Image();
         tempImg.onload = () => {
           lightboxImg.src = photo.src;
@@ -259,7 +551,7 @@
       if (!lightbox) return;
       currentPhotoIndex = (index >= 0 && index < photosData.length) ? index : 0;
       lastFocusedElement = document.activeElement;
-
+      
       updateLightboxContent();
 
       lightbox.classList.add('active');
@@ -308,7 +600,7 @@
         document.title = translations[lang].documentTitle;
       }
 
-      // Update all translatable elements
+      // Update all translatable text elements
       const translatableElements = document.querySelectorAll('[data-i18n]');
       translatableElements.forEach((el) => {
         const key = el.getAttribute('data-i18n');
@@ -319,6 +611,15 @@
           } else {
             el.textContent = content;
           }
+        }
+      });
+
+      // Update all placeholder elements
+      const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+      placeholderElements.forEach((el) => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+          el.setAttribute('placeholder', translations[lang][key]);
         }
       });
     }
@@ -371,7 +672,7 @@
     const photoTriggers = document.querySelectorAll('[data-photo-index]');
     photoTriggers.forEach((trigger) => {
       const index = parseInt(trigger.getAttribute('data-photo-index'), 10);
-
+      
       trigger.addEventListener('click', (e) => {
         e.preventDefault();
         openLightbox(index);
@@ -393,14 +694,21 @@
 
     // Keyboard navigation
     window.addEventListener('keydown', (e) => {
-      if (!lightbox || !lightbox.classList.contains('active')) return;
-
       if (e.key === 'Escape') {
-        closeLightbox();
-      } else if (e.key === 'ArrowLeft') {
-        showPrevPhoto();
-      } else if (e.key === 'ArrowRight') {
-        showNextPhoto();
+        if (lightbox && lightbox.classList.contains('active')) {
+          closeLightbox();
+        } else if (noteModal && noteModal.classList.contains('active')) {
+          closeNoteModal();
+        } else if (stayOverlayCard && stayOverlayCard.style.display !== 'none') {
+          stayOverlayCard.style.display = 'none';
+          if (stayTriggerBtn) stayTriggerBtn.setAttribute('aria-expanded', 'false');
+        }
+      } else if (lightbox && lightbox.classList.contains('active')) {
+        if (e.key === 'ArrowLeft') {
+          showPrevPhoto();
+        } else if (e.key === 'ArrowRight') {
+          showNextPhoto();
+        }
       }
     });
 
@@ -419,7 +727,7 @@
       lightbox.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].screenX;
         touchEndY = e.changedTouches[0].screenY;
-
+        
         const diffX = touchEndX - touchStartX;
         const diffY = touchEndY - touchStartY;
         const threshold = 40;
@@ -476,4 +784,3 @@
     initApp();
   }
 })();
-

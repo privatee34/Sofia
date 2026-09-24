@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Sofia Zhukova — A Gift For You</title>
-  <meta name="description" content="A digital letter and birthday gift for Sofia Zhukova from Arkhan">
+  <meta name="description" content="A digital letter and birthday gift for Sofia Zhukova">
   <meta name="theme-color" content="#110F0E">
 
   <!-- Open Graph / Meta -->
@@ -37,6 +37,13 @@
   =========================================== -->
   <div class="opening-screen" id="opening-screen" role="dialog" aria-modal="true" aria-label="A Gift for Sofia">
     <div class="opening-backdrop" aria-hidden="true"></div>
+    <div class="opening-particles" aria-hidden="true">
+      <span class="particle p1">✦</span>
+      <span class="particle p2">·</span>
+      <span class="particle p3">✧</span>
+      <span class="particle p4">·</span>
+      <span class="particle p5">✦</span>
+    </div>
     <div class="opening-container">
       <p class="opening-intro" data-i18n="opening.intro">Маленький подарок для тебя.</p>
       
@@ -98,11 +105,12 @@
 
       <div class="hero-content">
         <div class="hero-text-block">
-          <p class="hero-greeting animate-fade-in" data-i18n="hero.greeting">С Днём Рождения</p>
-          <h1 class="hero-main-name animate-fade-in delay-1" data-i18n="hero.name">София</h1>
+          <p class="hero-tag animate-fade-in" data-i18n="hero.for_you">ДЛЯ ТЕБЯ</p>
+          <p class="hero-greeting animate-fade-in delay-1" data-i18n="hero.greeting">С Днём Рождения</p>
+          <h1 class="hero-main-name animate-fade-in delay-2" data-i18n="hero.name">София</h1>
         </div>
 
-        <a href="#message" class="hero-scroll-indicator animate-fade-in delay-2" aria-label="Scroll to personal message">
+        <a href="#message" class="hero-scroll-indicator animate-fade-in delay-3" aria-label="Scroll to personal message">
           <span class="scroll-text" data-i18n="hero.scroll">Листай дальше ↓</span>
           <div class="scroll-mouse-icon" aria-hidden="true">
             <div class="scroll-wheel"></div>
@@ -167,7 +175,7 @@
                 <span class="view-pill" data-i18n="gallery.view">Увеличить ↗</span>
               </div>
             </div>
-            <p class="story-caption" data-i18n="captions.moment3">Такие моменты хочется сохранить.</p>
+            <p class="story-caption" data-i18n="captions.moment3">Некоторые моменты остаются.</p>
           </div>
         </div>
 
@@ -194,9 +202,21 @@
     </section>
 
     <!-- ==========================================
+         04.5 — A LITTLE SIGN (Heartbeat Interaction)
+    =========================================== -->
+    <div class="heartbeat-section text-center" aria-label="A little sign">
+      <div class="heartbeat-widget" id="heartbeat-widget" role="button" tabindex="0" aria-label="A little sign">
+        <span class="heartbeat-icon" id="heartbeat-icon" aria-hidden="true">♡</span>
+        <div class="heartbeat-tooltip" id="heartbeat-tooltip" aria-live="polite">
+          <span data-i18n="heartbeat.sign">Просто маленький знак.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
          05 — A LETTER FROM ME (The Emotional Core)
     =========================================== -->
-    <section class="section letter-section" id="letter" aria-label="A Letter From Arkhan">
+    <section class="section letter-section" id="letter" aria-label="A Letter For You">
       <div class="container container-narrow">
         <div class="letter-wrapper reveal-on-scroll" id="letter-wrapper">
           <!-- Initial Closed Envelope State -->
@@ -252,6 +272,27 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         05.5 — IF THIS WERE A MEMORY... (Cinematic Memory)
+    =========================================== -->
+    <section class="section memory-section" id="memory" aria-label="If This Were A Memory">
+      <div class="memory-ambient-glow" aria-hidden="true"></div>
+      <div class="container container-narrow text-center">
+        <div class="memory-card reveal-on-scroll" id="memory-card">
+          <h2 class="memory-heading" data-i18n="memory.heading">ЕСЛИ БЫ ЭТО БЫЛО ВОСПОМИНАНИЕМ...</h2>
+          <div class="memory-frame-wrapper">
+            <div class="memory-film-frame photo-card" data-photo-index="3" role="button" tabindex="0" aria-label="View memory photo">
+              <img src="images/image2.jpg" alt="Sofia portrait" class="memory-img" loading="lazy">
+              <div class="memory-frame-vignette" aria-hidden="true"></div>
+            </div>
+          </div>
+          <p class="memory-quote reveal-on-scroll delay-1" data-i18n="memory.quote">
+            Думаю, это воспоминание я бы сохранил.
+          </p>
         </div>
       </div>
     </section>
@@ -347,6 +388,43 @@
     </section>
 
     <!-- ==========================================
+         08.5 — A LITTLE NOTE (Interactive Card)
+    =========================================== -->
+    <section class="section note-section" id="note" aria-label="A Little Note">
+      <div class="container container-narrow text-center">
+        <div class="note-card-outer reveal-on-scroll">
+          <div class="note-card-teaser" id="note-teaser">
+            <span class="note-heart-icon" aria-hidden="true">♡</span>
+            <h2 class="note-teaser-title" data-i18n="note.tag">МАЛЕНЬКАЯ ЗАПИСКА</h2>
+            <button type="button" class="note-open-btn" id="note-open-btn" aria-haspopup="dialog" aria-expanded="false">
+              <span data-i18n="note.open_btn">Открыть</span>
+              <span class="note-btn-arrow">✦</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for A Little Note -->
+    <div class="note-modal" id="note-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="A Little Note">
+      <div class="note-backdrop" id="note-backdrop"></div>
+      <div class="note-paper-card" id="note-paper-card">
+        <button type="button" class="note-close-btn" id="note-close-btn" aria-label="Close note">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="note-card-body">
+          <div class="note-card-seal" aria-hidden="true">♡</div>
+          <div class="note-message-text" data-i18n="note.content">
+            Без громких слов.<br><br>Просто... я рад, что когда-то ты была частью моей истории.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
          09 — SURPRISE (The Climax Reveal)
     =========================================== -->
     <section class="section surprise-section" id="surprise" aria-label="Surprise Message">
@@ -374,7 +452,131 @@
     </section>
 
     <!-- ==========================================
-         10 — FINAL PHOTO & CLOSING SIGNATURE
+         10 — FOR THE MOMENTS THAT STAY (Quiet Reflection)
+    =========================================== -->
+    <section class="section stay-section" id="stay" aria-label="For The Moments That Stay">
+      <div class="stay-ambient-glow" aria-hidden="true"></div>
+      <div class="container container-narrow text-center">
+        <div class="stay-card reveal-on-scroll" id="stay-card">
+          <span class="stay-section-tag" data-i18n="stay.tag">Для моментов, которые остаются</span>
+          
+          <div class="stay-prose-block">
+            <p class="stay-lead-line reveal-on-scroll delay-1" data-i18n="stay.main_p1">
+              Некоторые люди тихо становятся частью нашей истории.
+            </p>
+            <p class="stay-body-line reveal-on-scroll delay-2" data-i18n="stay.main_p2">
+              Не потому, что остаются навсегда,<br>
+              а потому, что однажды<br>
+              делают что-то немного более значимым.
+            </p>
+          </div>
+
+          <div class="stay-divider-space" aria-hidden="true">
+            <span class="stay-subtle-star">✦</span>
+          </div>
+
+          <p class="stay-understated-line reveal-on-scroll delay-2" data-i18n="stay.secondary">
+            Может быть, этого достаточно.
+          </p>
+
+          <div class="stay-action-wrapper reveal-on-scroll delay-3">
+            <button type="button" class="stay-trigger-btn" id="stay-trigger-btn" aria-expanded="false" aria-controls="stay-overlay-card">
+              <span data-i18n="stay.button">Ещё кое-что ✦</span>
+            </button>
+          </div>
+
+          <!-- Small Elegant Overlay Card -->
+          <div class="stay-overlay-card" id="stay-overlay-card" style="display: none;">
+            <div class="stay-overlay-inner">
+              <button type="button" class="stay-overlay-close" id="stay-overlay-close" aria-label="Close message">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+
+              <div class="stay-overlay-content">
+                <p class="stay-overlay-p" data-i18n="stay.overlay_p1">
+                  Пусть жизнь подарит тебе много маленьких поводов для улыбки.
+                </p>
+                <p class="stay-overlay-p" data-i18n="stay.overlay_p2">
+                  И когда-нибудь, оглядываясь назад,<br>
+                  пусть некоторые моменты вспоминаются тебе с теплом.
+                </p>
+                <div class="stay-overlay-line" aria-hidden="true"></div>
+                <p class="stay-hidden-message" data-i18n="stay.hidden_note">
+                  Некоторые вещи лучше оставить красивым воспоминанием.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         11 — A LITTLE SPACE FOR YOU (Private Quiet Corner)
+    =========================================== -->
+    <section class="section space-section" id="space" aria-label="A Little Space For You">
+      <div class="space-ambient-glow" aria-hidden="true"></div>
+      <div class="container container-narrow text-center">
+        <div class="space-card reveal-on-scroll" id="space-card">
+          <div class="space-header">
+            <span class="space-quiet-symbol" id="space-secret-trigger" role="button" tabindex="0" aria-label="A quiet symbol">✦</span>
+            <div class="space-secret-toast" id="space-secret-toast" aria-live="polite" style="display: none;">
+              <span data-i18n="space.secret_found">Ты нашла тихую часть. ✦</span>
+            </div>
+            <h2 class="space-main-title" data-i18n="space.title">Маленькое место для тебя</h2>
+            <p class="space-subtitle" data-i18n="space.subtitle">Просто маленькое место, где можно что-то оставить.</p>
+          </div>
+
+          <!-- Closed Trigger State -->
+          <div class="space-trigger-wrapper" id="space-trigger-wrapper">
+            <button type="button" class="space-open-btn" id="space-open-btn">
+              <span data-i18n="space.open_btn">Оставить что-нибудь ✦</span>
+            </button>
+          </div>
+
+          <!-- Message Panel -->
+          <div class="space-panel" id="space-panel" style="display: none;">
+            <div class="space-panel-inner">
+              <p class="space-panel-intro" data-i18n="space.panel_intro">
+                Может быть, мысль.<br>
+                Может быть, несколько слов.<br>
+                А может, ничего.
+              </p>
+
+              <form class="space-form" id="space-form" onsubmit="return false;">
+                <div class="space-input-wrapper">
+                  <textarea 
+                    class="space-textarea" 
+                    id="space-textarea" 
+                    rows="4" 
+                    data-i18n-placeholder="space.placeholder" 
+                    placeholder="Напиши что-нибудь..." 
+                    aria-label="Write something"
+                  ></textarea>
+                </div>
+                <div class="space-actions">
+                  <button type="button" class="space-submit-btn" id="space-submit-btn">
+                    <span data-i18n="space.submit_btn">Оставить здесь ✦</span>
+                  </button>
+                </div>
+              </form>
+
+              <!-- Success State -->
+              <div class="space-submitted-state" id="space-submitted-state" style="display: none;">
+                <div class="space-submitted-icon" aria-hidden="true">✦</div>
+                <p class="space-submitted-text" data-i18n="space.submitted">Оставлено здесь. ✦</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         12 — FINAL PHOTO & CLOSING
     =========================================== -->
     <section class="final-photo-section" id="final-photo" aria-label="Final Celebration Photo">
       <div class="final-photo-container">
@@ -386,14 +588,16 @@
             loading="lazy"
           >
           <div class="final-overlay"></div>
+          <div class="final-fade-to-dark-overlay" id="final-fade-to-dark" aria-hidden="true"></div>
         </div>
 
         <div class="final-content text-center">
           <h2 class="final-main-name">SOFIA</h2>
           <div class="final-age-badge">15</div>
           <p class="final-birthday-text" data-i18n="final.title">С Днём Рождения ✨</p>
-          <div class="final-signature-block">
-            <p class="final-warm-wishes" data-i18n="final.signature">С теплом,<br>Архан</p>
+          <p class="final-wish-paragraph" data-i18n="final.wish">Пусть твои 15 будут наполнены красивыми моментами, искренними улыбками и маленькими радостями, которые делают тебя счастливой.</p>
+          <div class="final-whisper-container">
+            <p class="final-whisper-text" id="final-whisper" data-i18n="final.closing_whisper">Некоторые моменты стоит сохранить.</p>
           </div>
         </div>
       </div>
@@ -407,7 +611,7 @@
     <div class="container text-center">
       <div class="footer-content">
         <p class="footer-name">Sofia Zhukova</p>
-        <p class="footer-wish-line" data-i18n="footer.wishes">С теплом, Архан</p>
+        <p class="footer-wish-line" data-i18n="footer.wishes">15-летие</p>
       </div>
     </div>
   </footer>
